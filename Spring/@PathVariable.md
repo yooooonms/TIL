@@ -49,7 +49,7 @@ public Order orderInfo(@PathVariable Map<String, Long> map) {
 
 게시판 페이징에서 첫 페이지는 깔끔하게 숫자 표시 안하고 `/api/boards`라는 경로로 끝내고 싶고, 두 번째 페이지부터 `/api/boards/2`, `/api/boards/3` 요렇게 표시하고 싶다는 요구사항이 있다고 할 때  
 
-하지만 `api/boards`라고 요청을 보내면 처리하지 않는다. 그럼 분리해서 핸들러 메소드를 만들면 되지 않을까 생각할 수 있다.  
+`api/boards`라고 요청을 보내면 처리하지 않는다. 그럼 분리해서 핸들러 메소드를 만들면 되지 않을까 생각할 수 있다.  
 
 ```java
 @GetMapping(path = "/api/boards")
